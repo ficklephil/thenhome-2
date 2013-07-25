@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'DotLine';
+    src: url('../fonts/DOTLB___.TTF');
+}
+
+@font-face {
+    font-family: 'BellGothic';
+    src: url('../fonts/bell-gothic-std-light.otf');
+}
+
 html{
     height: 100%
 }
@@ -16,12 +26,23 @@ body{
     float:right;
 }
 
+.then-home{
+    z-index:1;
+    position: absolute;
+    top:10px;
+    left:75px;
+    height:80px;
+    width:175px;
+}
+
 .main-nav{
     width:100%;
     height:40px;
     background-color: #343434;
     border-bottom: 1px solid #777777;
 }
+
+
 
 #map-canvas{
     height:100%;
@@ -39,14 +60,17 @@ body{
     z-index:1;
     position: absolute;
     top:60px;
-    left:100px;
+    left:350px;
     border:1px solid #d5d5d5;
     width:575px;
     height:66px;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 .search{
+    font-family: 'BellGothic', 'Georgia', serif;
+    font-weight: 600;
+    font-size: 12px;
     border:1px solid #d5d5d5;
     margin: 11px;
     height:41px;
@@ -57,13 +81,17 @@ body{
     border:1px solid red;
     width:110px;
     height:100%;
+    padding-top:10px;
 }
 
 .location-search{
+    font-family: 'DotLine', 'Georgia', serif;
+    font-size:18px;
+    padding-top:10px;
     text-align: center;
-    border:1px solid red;
+    border:0px solid red;
     width:58%;
-    height:100%;
+
 }
 
 .search-button{
@@ -71,5 +99,4 @@ body{
     border:1px solid red;
     width:110px;
     height:100%;
-
 }
