@@ -4,8 +4,18 @@
 }
 
 @font-face {
-    font-family: 'BellGothic';
-    src: url('../fonts/bell-gothic-std-light.otf');
+    font-family: 'BellGothicLight';
+    src: url('../fonts/BellGothicStd-Light.otf');
+}
+
+@font-face {
+    font-family: 'BellGothicBold';
+    src: url('../fonts/BellGothicStd-Bold.otf');
+}
+
+@font-face {
+    font-family: 'BellGothicBlack';
+    src: url('../fonts/BellGothicStd-Black.otf');
 }
 
 html{
@@ -68,35 +78,67 @@ body{
 }
 
 .search{
-    font-family: 'BellGothic', 'Georgia', serif;
-    font-weight: 600;
-    font-size: 12px;
     border:1px solid #d5d5d5;
     margin: 11px;
     height:41px;
 }
 
 .buy-rent{
+    font-family: 'BellGothicLight', 'Georgia', serif;
+    font-size: 12px;
+
     text-align: center;
-    border:1px solid red;
-    width:110px;
-    height:100%;
-    padding-top:10px;
+    border:0px solid red;
+    width:95px;
+    height:27px;
+    padding-top:15px;
+    color: #676767;
+}
+
+.buyButton{
+    margin-left: 14px;
+    cursor: pointer;
+    cursor: hand;
+    color: #E55451;
+    text-shadow: 0.3px 0.3px 1px #E55451;
+}
+
+.spacer{
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.rentButton{
+    cursor: pointer;
+    cursor: hand;
+    color: #7eaa53;
+    text-shadow: 0.3px 0.3px 1px #7eaa53;
 }
 
 .location-search{
     font-family: 'DotLine', 'Georgia', serif;
     font-size:18px;
-    padding-top:10px;
+    padding-top:12px;
     text-align: center;
     border:0px solid red;
-    width:58%;
+    width:68%;
 
 }
 
 .search-button{
+    cursor: pointer;
+    cursor: hand;
+    font-family: 'BellGothicLight', 'Georgia', serif;
+    font-size: 12px;
+    text-shadow: 0.3px 0.3px 1px #777777;
     text-align: center;
-    border:1px solid red;
-    width:110px;
-    height:100%;
+    border:0px solid red;
+    padding-top:15px;
+    width:75px;
+    color: #676767;
+    height:27px;
+}
+
+.search-button:hover{
+    color: #111111;
 }
