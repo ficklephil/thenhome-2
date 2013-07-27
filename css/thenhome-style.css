@@ -75,6 +75,10 @@ body{
     width:575px;
     height:66px;
     background-color: #ffffff;
+
+    font-family: 'BellGothicLight', 'Georgia', serif;
+    font-size: 12px;
+    text-shadow: 0.3px 0.3px 1px #777777;
 }
 
 .search{
@@ -95,7 +99,7 @@ body{
     color: #676767;
 }
 
-.buyButton{
+.buy-button{
     margin-left: 14px;
     cursor: pointer;
     cursor: hand;
@@ -108,7 +112,7 @@ body{
     margin-right:3px;
 }
 
-.rentButton{
+.rent-button{
     cursor: pointer;
     cursor: hand;
     color: #7eaa53;
@@ -141,4 +145,67 @@ body{
 
 .search-button:hover{
     color: #111111;
+}
+
+.page-iterator-control{
+
+    border:0px solid blue;
+    height:45px;
+    width:100%;
+    padding-top: 1px;
+}
+
+.page-iterator{
+
+    border:0px solid green;
+    height:45px;
+    width:354px;
+    margin:auto;
+}
+
+.previous{
+
+    border:0px solid red;
+    background-image: url("../images/previous-button.png");
+    background-repeat: no-repeat;
+    height:18px;
+    width:141px;
+    padding-left:8px;
+    padding-top: 7px;
+    text-align: center;
+
+    font-family: 'BellGothicLight', 'Georgia', serif;
+    font-size: 12px;
+    text-shadow: 0.3px 0.3px 1px #efefef;
+    color:#efefef;
+}
+
+.page-counter{
+
+    position: absolute;
+    z-index:1;
+    margin-left:140px;
+    margin-top: -20px;
+    border:1px solid red;
+    background-image: url("../images/page-counter.png");
+    background-repeat: no-repeat;
+    height:64px;
+    width:64px;
+}
+
+.next{
+
+    border:0px solid green;
+    background-image: url("../images/next-button.png");
+    background-repeat: no-repeat;
+    padding-top: 7px;
+    height:25px; /* why is this different to above*/
+    margin-left:50px;
+    width:150px;
+    text-align: center;
+
+    font-family: 'BellGothicLight', 'Georgia', serif;
+    font-size: 12px;
+    text-shadow: 0.3px 0.3px 1px #efefef;
+    color:#efefef;
 }
