@@ -49,8 +49,10 @@ a:hover{
 .bell-gothic-grey{
     font-family: 'BellGothicLight', 'Georgia', serif;
     font-size: 12px;
-    color:#666666;
-    letter-spacing:1px;
+    color:#434343;
+    letter-spacing:0px;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px #d5d5d5;
 }
 
 .bell-gothic-white{
@@ -277,11 +279,11 @@ body{
 
 .search-menu-item{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     background-color: #fbfbfb;
     border:1px solid #d5d5d5;
     width:210px;
-    height:21px;
+    height:28px;
     margin-bottom: 3px;
 
 }
@@ -292,4 +294,26 @@ body{
     padding-top: 15px;
     border:0px solid red;
     color: #efefef;
+}
+
+.search-menu-control input{
+    border:0px solid red;
+    width:23px;
+    color:#7eaa53;
+    cursor: pointer;
+    cursor: hand;
+    background-color: #fbfbfb;
+}
+
+.search-menu-control input:hover{
+    border:0px solid red;
+    text-decoration: underline;
+}
+
+.type input{
+    width:36px;
+}
+
+.beds input{
+    width:7px;
 }
