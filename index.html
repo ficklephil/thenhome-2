@@ -18,17 +18,21 @@
 </head>
 
 <body>
-	<div class='main-nav'>
+	<div class='main-nav bell-gothic-white'>
         <div class='then-home'><img src="images/THEN-HOME.png"></div>
+        <div class='main-nav-menu'><a href='#'>COMPETITIONS</a> | <a href='#'>LOGIN</a></div>
 	</div>
-    <div class='search-control'>
+    <div class='search-control search-control-drop-shadow bell-gothic'>
+        <!-- Search Control -->
         <div class='search'>
             <div class='buy-rent left'>
                 <div class='buy-button left'>BUY</div>
                 <div class='spacer left'>|</div>
                 <div class='rent-button left'>RENT</div>
             </div>
-            <div class='location-search left'>HOUNSLOW (TW3)</div>
+            <div class='location-search left'>
+                <input class='location-search-input dot-line' type="search" value="HOUNSLOW (TW3)">
+            </div>
             <div class='search-button right'>SEARCH</div>
         </div>
         <div class='page-iterator-control'>
@@ -44,7 +48,16 @@
                 </div>
             </div>
         </div>
+        <!-- !Search Control -->
     </div>
+    <!-- Search Menu -->
+    <div class='search-menu-control search-menu-control-drop-shadow bell-gothic-grey'>
+        <div class='search-menu-item'>PRICE : 200K to 300K</div>
+        <div class='search-menu-item'>PROPERTY TYPE : House</div>
+        <div class='search-menu-item'>BEDS : 1 to 2</div>
+    </div>
+
+    <!-- !Search Menu -->
     <div id='map-canvas'></div>
     <div class='content'></div>
 </body>
