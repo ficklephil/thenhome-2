@@ -5,7 +5,8 @@
 	<title>Then Home</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/css-reset.css">
-    <link rel="stylesheet" type="text/css" href="css/thenhome-style.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/thenhome-style.css">-->
+    <link rel="stylesheet/less" type="text/css" href="css/thenhome-style.less" />
     <!-- JavaScript -->
     <script type="text/javascript"
             src="com/jquery/jquery-1.10.2.min.js">
@@ -13,8 +14,10 @@
     <script type="text/javascript"
             src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA5Zhn0d70pprD2K2ogELhYwmJy_N32le4&sensor=false">
     </script>
+    <script src="com/less/less-1.4.1.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="com/thenhome/thenhome.js">
     </script>
+
 </head>
 
 <body>
@@ -22,33 +25,38 @@
         <div class='then-home'><img src="images/THEN-HOME.png"></div>
         <div class='main-nav-menu'><a href='#'>COMPETITIONS</a> | <a href='#'>LOGIN</a></div>
 	</div>
-    <div class='search-control search-control-drop-shadow bell-gothic'>
-        <!-- Search Control -->
-        <div class='search'>
-            <div class='buy-rent left'>
-                <div class='buy-button left'>BUY</div>
-                <div class='spacer left'>|</div>
-                <div class='rent-button left'>RENT</div>
+    <div class='search-control-container'>
+        <div class='search-control search-control-drop-shadow bell-gothic'>
+            <!-- Search Control -->
+            <div class='search'>
+                <div class='buy-rent left'>
+                    <div class='buy-button left'>BUY</div>
+                    <div class='spacer left'>|</div>
+                    <div class='rent-button left'>RENT</div>
+                </div>
+                <div class='location-search left'>
+                    <input class='location-search-input dot-line' value="HOUNSLOW (TW3)">
+                </div>
+                <div class='search-button right'>SEARCH</div>
             </div>
-            <div class='location-search left'>
-                <input class='location-search-input dot-line' type="search" value="HOUNSLOW (TW3)">
+            <div class='page-iterator-control'>
+                <div class='page-iterator'>
+                    <div class='previous left'>
+                        PREVIOUS
+                    </div>
+                    <div class='page-counter left'>
+                        <div class="pieContainer">
+                            <div class="pieBackground"></div>
+                            <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+                        </div>
+                    </div>
+                    <div class='next left'>
+                        NEXT
+                    </div>
+                </div>
             </div>
-            <div class='search-button right'>SEARCH</div>
+            <!-- !Search Control -->
         </div>
-        <div class='page-iterator-control'>
-            <div class='page-iterator'>
-                <div class='previous left'>
-                    PREVIOUS
-                </div>
-                <div class='page-counter left'>
-                    PIE
-                </div>
-                <div class='next left'>
-                    NEXT
-                </div>
-            </div>
-        </div>
-        <!-- !Search Control -->
     </div>
     <!-- Search Menu -->
     <div class='search-menu-control search-menu-control-drop-shadow bell-gothic-grey'>

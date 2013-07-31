@@ -1,5 +1,8 @@
 /** Fonts **/
 
+@backgound-color: #fbfbfb;
+@border-color: #d5d5d5;
+
 @font-face {
     font-family: 'DotLine';
     src: url('../fonts/DOTLB___.TTF');
@@ -19,6 +22,28 @@
     font-family: 'BellGothicBlack';
     src: url('../fonts/BellGothicStd-Black.otf');
 }
+
+html{
+  height: 100%
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size:12px;
+  letter-spacing: 0;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
 
 a:link{
     color: #efefef;
@@ -41,25 +66,21 @@ a:hover{
 
 .bell-gothic{
     font-family: 'BellGothicLight', 'Georgia', serif;
-    font-size: 12px;
     color:#efefef;
-    letter-spacing:1px;
+    letter-spacing:0px;
 }
 
 .bell-gothic-grey{
-    font-family: 'BellGothicLight', 'Georgia', serif;
-    font-size: 12px;
+    font-family: 'BellGothicLight', 'Helvetica', sans-serif;
+//  font-family: 'Arial','Helvetica',sans-serif;
     color:#434343;
-    letter-spacing:0px;
-    font-weight: 300;
-    text-shadow: 1px 1px 4px #d5d5d5;
-}
+   /*font-weight: 300;*/
+    /*text-shadow: 1px 1px 4px #d5d5d5;*/
+ }
 
 .bell-gothic-white{
-    font-family: 'BellGothicLight', 'Georgia', serif;
-    font-size: 12px;
+     font-family: 'BellGothicLight', 'Helvetica', sans-serif;
     color:#efefef;
-    letter-spacing:1px;
 }
 
 .dot-line{
@@ -81,29 +102,12 @@ a:hover{
     box-shadow: 3px 3px 10px #d5d5d5;
 }
 
-html{
-    height: 100%
-}
-
-body{
-    height: 100%;
-    margin: 0;
-    padding: 0
-}
-
-.left{
-    float:left;
-}
-
-.right{
-    float:right;
-}
 
 .then-home{
     z-index:1;
     position: absolute;
-    top:10px;
-    left:70px;
+    top:7px;
+    left:20px;
     height:80px;
     width:175px;
 }
@@ -127,17 +131,36 @@ body{
     width:100%;
     height:40px;
     background-color: #efefef;
+
+}
+
+.search-control-container{
+  z-index: 1;
+  border:0px solid red;
+  width:100%;
+  position: absolute;
 }
 
 .search-control{
-    z-index:1;
-    position: absolute;
-    top:60px;
-    left:350px;
-    border:1px solid #d5d5d5;
+//  width: 50%;
+//  margin: 0 auto;
+
+    z-index:2;
+  //position: absolute;
+//    top:60px;
+
+
+  margin-top:29px;
+    border:1px solid @border-color;
     width:575px;
+//  width: 50%;
     height:66px;
-    background-color: #fbfbfb;
+    background-color: @backgound-color;
+    margin-left:auto;
+  margin-right:auto;
+//  margin: 0 auto;
+  //margin-left:auto;
+    //margin-right:auto;
     /*font-family: 'BellGothicLight', 'Georgia', serif;*/
     /*font-size: 12px;*/
     /*text-shadow: 0.3px 0.3px 1px #777777;*/
@@ -237,7 +260,6 @@ body{
     padding-top: 7px;
     text-align: center;
     color:#d5d5d5;
-    font-size:12px;
 }
 
 
@@ -248,7 +270,7 @@ body{
     z-index:1;
     margin-left:140px;
     margin-top: -20px;
-    border:1px solid red;
+    border:0px solid red;
     background-image: url("../images/page-counter.png");
     background-repeat: no-repeat;
     height:64px;
@@ -266,7 +288,6 @@ body{
     width:150px;
     text-align: center;
     color:#efefef;
-    font-size:12px;
 }
 
 .search-menu-control{
@@ -290,8 +311,9 @@ body{
 
 .main-nav-menu{
     float:right;
-    width:168px;
-    padding-top: 15px;
+    /*width:168px;*/
+    margin-right:18px;
+    padding-top: 13px;
     border:0px solid red;
     color: #efefef;
 }
@@ -316,4 +338,51 @@ body{
 
 .beds input{
     width:7px;
+}
+
+//TIMER
+.pieContainer {
+  height: 61px;
+}
+.pieBackground {
+  background-color: grey;
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -moz-box-shadow: -1px 1px 3px #000;
+  -webkit-box-shadow: -1px 1px 3px #000;
+  -o-box-shadow: -1px 1px 3px #000;
+  box-shadow: -1px 1px 3px #000;
+}
+
+.pie {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+.hold {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+#pieSlice1 .pie {
+  background-color: #1b458b;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  transform:rotate(180deg);
 }
