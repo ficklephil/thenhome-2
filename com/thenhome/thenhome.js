@@ -59,4 +59,6 @@ console.log(mapHeight());
 
 setMapHeight();
 
+//so we just need to access the timer api here
+
 google.maps.event.addDomListener(window, 'load', initialize);
