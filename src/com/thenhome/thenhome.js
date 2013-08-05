@@ -53,6 +53,22 @@ function setMapHeight(){
     $('#map-canvas').height(100);
 }
 
+function nextHandler(){
+    console.log('nextHandler');
+}
+
+function setupViewListeners(){
+
+    console.log('hello setup view listeners');
+    $(".next").click(function() {
+        alert( "Handler for .click() called." );
+    });
+}
+
+function previousHandler(){
+    console.log('previousHandler');
+}
+
 console.log(getWindowHeight());
 console.log(getMainNavHeight());
 console.log(mapHeight());
@@ -62,3 +78,9 @@ setMapHeight();
 //so we just need to access the timer api here
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+function init(){
+    setupViewListeners();
+};
+
+init();
